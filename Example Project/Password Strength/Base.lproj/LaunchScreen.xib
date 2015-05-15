@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="NmD-fB-eYi">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2015 Matthew Ellis. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="KDq-tE-20l">
+                    <rect key="frame" x="20" y="527" width="281" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Password Strength" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="mnA-Hr-WN6">
+                    <rect key="frame" x="20" y="81" width="281" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="633-VR-GJE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchAppIcon" translatesAutoresizingMaskIntoConstraints="NO" id="2np-b2-rD3">
+                    <rect key="frame" x="35" y="159" width="250" height="250"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="250" id="4eR-lY-3iH"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="a7C-2L-5KO"/>
+                        <constraint firstAttribute="width" constant="250" id="nRa-oN-r6d"/>
+                        <constraint firstAttribute="height" constant="250" id="qt8-qG-INw"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.2470588235" green="0.64705882349999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="2np-b2-rD3" firstAttribute="top" secondItem="mnA-Hr-WN6" secondAttribute="bottom" constant="48" id="0H8-JM-Ys0"/>
+                <constraint firstItem="KDq-tE-20l" firstAttribute="leading" secondItem="NmD-fB-eYi" secondAttribute="leading" constant="20" symbolic="YES" id="BZy-d1-uMh"/>
+                <constraint firstItem="mnA-Hr-WN6" firstAttribute="leading" secondItem="NmD-fB-eYi" secondAttribute="leading" constant="20" id="RNx-As-A6X"/>
+                <constraint firstAttribute="trailing" secondItem="mnA-Hr-WN6" secondAttribute="trailing" constant="19" id="T3A-pg-B15"/>
+                <constraint firstAttribute="centerX" secondItem="2np-b2-rD3" secondAttribute="centerX" id="TzO-OL-yOr"/>
+                <constraint firstItem="mnA-Hr-WN6" firstAttribute="top" secondItem="NmD-fB-eYi" secondAttribute="top" constant="81" id="V1L-6S-Gjd"/>
+                <constraint firstAttribute="bottom" secondItem="KDq-tE-20l" secondAttribute="bottom" constant="20" id="hAn-NK-Mw8"/>
+                <constraint firstAttribute="centerX" secondItem="KDq-tE-20l" secondAttribute="centerX" id="w9z-Vp-xES"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="548" y="347"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="LaunchAppIcon" width="250" height="250"/>
+    </resources>
+</document>
